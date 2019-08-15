@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <div class="container pt-2">
+      <center><h4>Choose the plan that fits you best</h4></center>
+      <div class="card-deck pt-5">
+        <div class="card" style="width: 18rem;">
+        <img src="/assets/img/coffee_cup.jpg" class="img-fluid card-img-top" alt="Choose this plan to have the best coffee in the world">
+        <div class="card-body">
+          <h5 class="card-title">Just for you</h5>
+          <p class="card-text">Choose this plan to enjoy the best coffee in the world.</p>
+          <p class="card-text">Just for you for only 10£/month</p>
+          <a href="/new_customer/individual" class="btn btn-primary" id="individual-plan">Select</a>
+        </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+        <img src="/assets/img/coffee_household.jpg" class="img-fluid card-img-top" alt="Choose this plan to have the best coffee in the world">
+        <div class="card-body">
+          <h5 class="card-title">For the household - get a <u>free trial</u></h5>
+          <p class="card-text">The best coffee in the world for you and your friends.</p>
+          <p class="card-text">Only 20£/month</p>
+          <a href="/new_customer/household" class="btn btn-primary" id="household-plan">Select</a>
+        </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+        <img src="/assets/img/coffee_corporate.jpg" class="img-fluid card-img-top" alt="Choose this plan to have the best coffee in the world">
+        <div class="card-body">
+          <h5 class="card-title">For the entire office - <u>metered</u></h5>
+          <p class="card-text">The best coffee in the world for your office. Share it with everybody.</p>
+          <p class="card-text">Up to 6£/month per package</p>
+          <a href="/new_customer/corporate" class="btn btn-primary" id="corporate-plan">Select</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://js.stripe.com/v3/"></script>
+  </body>
+</html>
