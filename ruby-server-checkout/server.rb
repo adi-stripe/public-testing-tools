@@ -18,6 +18,7 @@ get '/' do
       quantity: 1,
     }],
     success_url: 'http://localhost:4567/success/{CHECKOUT_SESSION_ID}',
+    cancel_url: 'http://localhost:4567/',
   )
 
   erb :checkout
