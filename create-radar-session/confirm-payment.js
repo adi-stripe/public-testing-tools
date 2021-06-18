@@ -1,4 +1,5 @@
-var stripe = Stripe('pk_test_AnOcpECn5sgSsIWl0lgN4n7d002LJtdPkg');
+var stripe = Stripe('pk_test_AnOcpECn5sgSsIWl0lgN4n7d002LJtdPkg',
+                {canCreateRadarSession: true});
 var radar_session;
 
 function confirmPayment() {
