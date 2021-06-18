@@ -16,7 +16,7 @@ function confirmPayment() {
           stripe.confirmCardPayment(pi_secret, {
             payment_method: pm_id,
             radar_options: {
-                session = radar_session
+                session: radar_session
             }
         }).then(function(result) {
             var result_message = document.getElementById("result_message");
