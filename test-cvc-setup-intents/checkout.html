@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-    </head>
+        <title>Checkout</title>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="checkout.js"></script>
+      </head>
 
     <body>
-        
+        <div id="cvc-element">
+          </div>
+          
+          <!-- We'll put the error messages in this element -->
+          <div id="errors" role="alert"></div>
+          
+          <button id="submit">Pay</button>
     </body>
     
 </html>
