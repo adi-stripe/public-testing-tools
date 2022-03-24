@@ -11,7 +11,7 @@ form.addEventListener('submit', async (event) => {
 
   const {error} = await stripe.confirmCardSetup('seti_1Kgy6KKSM3YgOnvFYF3W0x4e_secret_LNjZU6KVkz8ACB2H81AcMqkYunjhEpj', {
     payment_method: 'pm_1Kgy4XKSM3YgOnvFMiPykbAf',
-    payment_method_options: {
+    payment_method_data: {
       card: {
         cvc: cardCvcElement
       }
