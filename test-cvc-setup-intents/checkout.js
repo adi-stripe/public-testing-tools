@@ -9,8 +9,8 @@ const form = document.getElementById('payment-form');
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
 
-  const {error} = await stripe.confirmCardPayment('pi_3KjA8RKSM3YgOnvF0B8NFDu9_secret_oKh78iZ4PX6Wb94aJJWXDdkpX', {
-    payment_method: 'pm_1KjA7lKSM3YgOnvFtdglxPp8',
+  const {error} = await stripe.confirmCardSetup('seti_1KjANYKSM3YgOnvFSjnOjX3I_secret_LQ0ODlYO1PkOnENCXRKSmb3VtEbM702', {
+    payment_method: 'pm_1Kj9yzKSM3YgOnvF8kXUdsHO',
     payment_method_options: {
       card: {
         cvc: cardCvcElement
